@@ -1,0 +1,15 @@
+{
+  "name": "crx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "inject.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "file-saver": "^2.0.2",
+    "xlsx": "^0.15.5"
+  }
+}
