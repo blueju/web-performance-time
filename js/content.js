@@ -40,11 +40,7 @@ function getTotalFinishTime() {
 
 // import XLSX from "xlsx";
 setTimeout(() => {
-  let blankTime,
-    firstScreenTime,
-    userCanOperateTime,
-    totalDownloadTime,
-    totalFinishTime;
+  let blankTime, firstScreenTime, userCanOperateTime, totalDownloadTime, totalFinishTime;
 
   try {
     blankTime = getBlankTime();
@@ -71,21 +67,15 @@ setTimeout(() => {
         firstScreenTime,
         userCanOperateTime,
         totalDownloadTime,
-        totalFinishTime
+        totalFinishTime,
       ]);
       sessionStorage.setItem("performance-time", JSON.stringify(data));
       window.location.reload(true);
     }
   } else {
     data = [];
-    data.push([
-      blankTime,
-      firstScreenTime,
-      userCanOperateTime,
-      totalDownloadTime,
-      totalFinishTime
-    ]);
+    data.push([blankTime, firstScreenTime, userCanOperateTime, totalDownloadTime, totalFinishTime]);
     sessionStorage.setItem("performance-time", JSON.stringify(data));
     window.location.reload(true);
   }
-}, 3000);
+}, 6000);

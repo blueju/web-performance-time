@@ -40,8 +40,8 @@
             // "<all_urls>" 表示匹配所有地址
             "matches": [
                 // "<all_urls>"
-                "http://localhost:3000/*",
-                "http://localhost:3001/*"
+                "http://localhost:3000/*"
+                // "http://localhost:3001/*"
             ],
             // 多个JS按顺序注入
             "js": [
